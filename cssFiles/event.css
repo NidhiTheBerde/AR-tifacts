@@ -1,3 +1,8 @@
+* {
+  /* margin: 0;
+    padding: 0; */
+  box-sizing: border-box;
+}
 
 html {
   height: 100%;
@@ -8,20 +13,21 @@ p {
   color: rgb(33, 33, 33);
   font-size: 20px;
 }
+
 body {
-  
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210923/pngtree-traditional-african-color-pattern-image_905736.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2980b9;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-} 
-/* Navbar Start */
+}
+
 
 .nav {
   height: 70px;
-  background-color: #2980b9 !important;
+  background-color: #33bba2 !important;
   box-shadow: 0 3px 15px rgba(51, 49, 49, 0.4);
   display: flex;
   align-items: center;
@@ -47,28 +53,28 @@ body {
   width: 60px;
   background-color: antiquewhite;
   border-radius: 10%;
+  margin-top: 10px;
 }
 
 .navbar-logo span {
+  text-transform: none;
   font-weight: bold;
   color: white;
   margin-left: 10px;
 }
+
 .navbar-logo a:hover {
   text-decoration: none;
 }
+
 .nav ul li {
   display: inline-block;
   padding: auto 20px;
 }
+
 .nav-menu {
   margin-bottom: 0;
   padding-left: 0;
-}
-
-.about {
-  margin-left: 80px;
-  margin-right: 80px;
 }
 
 .nav ul li a {
@@ -77,36 +83,37 @@ body {
   padding: 0 15px;
   line-height: 70px;
   font-size: 17px;
-  background-color: #2980b9 !important;
+  background-color: transparent !important;
   transition: 0.3s;
   letter-spacing: 1px;
   margin: 0;
   /* margin: 0 20px; */
 }
 
-.nav ul li a.active:hover {
-  color: black ;
+.nav ul li a:hover {
+  color: antiquewhite;
   text-decoration: underline;
-  text-decoration-color: black;
+  text-decoration-color: antiquewhite;
+  transform: translateY(-3px);
 }
 
-.dropdown:hover > a {
-  color: black;
+.dropdown:hover>a {
+  color: antiquewhite;
   text-decoration: underline;
-  text-decoration-color: black;
+  text-decoration-color: antiquewhite;
 }
 
 .nav ul ul {
   position: absolute !important;
   top: 85px;
-  border-top: 3.5px solid #8ad0ff;
+  border-top: 3.5px solid #33bba2;
   background-color: none;
   opacity: 0;
   visibility: hidden;
   padding-left: 0;
 }
 
-.nav ul li:hover > ul {
+.nav ul li:hover>ul {
   top: 70px;
   opacity: 1;
   visibility: visible;
@@ -116,19 +123,20 @@ body {
 
 .nav ul ul li {
   width: 310px;
-  display: list-item; 
-   position: relative;
+  display: list-item;
+  position: relative;
   border: 1px solid #8ad0ff;
   border-top: none;
 }
 
-a.dropdown-item{
+a.dropdown-item {
   margin: 0 !important;
 }
+
 /* ul.dropdown-menu.show{
-  margin: 0;
-  padding: 0;
-} */
+    margin: 0;
+    padding: 0;
+  } */
 .nav ul ul li a {
   line-height: 25px;
   padding: 10px 15px;
@@ -146,3 +154,5 @@ a.dropdown-item{
   padding: 6px 8px;
   cursor: pointer;
 }
+
+/* Navbar Ends */
